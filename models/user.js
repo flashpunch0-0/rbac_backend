@@ -35,7 +35,6 @@ rbac_userSchema.pre("save", async function (next) {
 });
 
 //  created a function to match the passwords shared and enrypted password stored in mongodb
-
 rbac_userSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };

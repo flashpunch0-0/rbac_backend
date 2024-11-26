@@ -1,5 +1,4 @@
 const jwt = require("jsonwebtoken");
-const { permissions } = require("../models/role");
 
 function authorize(roles) {
   return (req, res, next) => {

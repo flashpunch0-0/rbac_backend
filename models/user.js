@@ -19,6 +19,12 @@ const rbac_userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  role: {
+    type: String,
+    enum: ["admin", "user", "moderator"],
+    default: "user",
+    required: true,
+  },
 });
 
 //  using bcrypt to hash the pasword

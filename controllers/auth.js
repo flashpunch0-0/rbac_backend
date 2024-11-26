@@ -10,7 +10,7 @@ const generateToken = (user) => {
     email: user.email,
     role: user.role,
   };
-  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1d" });
+  return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
 };
 
 //  user register controller function

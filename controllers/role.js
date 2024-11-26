@@ -22,8 +22,16 @@ const userCheck = (req, res) => {
   res.status(200).send(`Hello user ${req.user.name}!`);
 };
 
+const userPermissionCheck = (req, res) => {
+  connectDatabase();
+  res
+    .status(200)
+    .send(`Hello user ${req.user.name} you have permission to access`);
+};
+
 module.exports = {
   adminCheck,
   moderatorCheck,
   userCheck,
+  userPermissionCheck,
 };

@@ -7,13 +7,15 @@ const router = express.Router();
 // admin rout
 const adminCheck = (req, res) => {
   connectDatabase();
-  res.status(200).send("Admin online");
+  res.status(200).send(`Admin online => ${req.user.name}: ${req.user.role}`);
 };
 
 // Moderator and Admin route controller
 const moderatorCheck = (req, res) => {
   connectDatabase();
-  res.status(200).send("Moderator and admin online");
+  res
+    .status(200)
+    .send(`Moderator or admin online =>  ${req.user.name} : ${req.user.role}`);
 };
 
 // User route controller

@@ -9,6 +9,7 @@ const generateToken = (user) => {
     name: user.name,
     email: user.email,
     role: user.role,
+    tokenVersion: user.tokenVersion,
   };
   return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: "1h" });
 };
@@ -16,17 +17,25 @@ const generateToken = (user) => {
 //  user register controller function
 const registerUser = async (req, res) => {
   connectDatabase();
-  const { username, name, email, password, role } = req.body;
+  const { username, name, email, password, role, tokenVersion } = req.body;
   try {
     const userExists = await User.findOne({ email });
     if (userExists)
       return res.status(400).json({ message: "User already exists" });
-    const user = await User.create({ username, name, email, password, role });
+    const user = await User.create({
+      username,
+      name,
+      email,
+      password,
+      role,
+      tokenVersion,
+    });
     res.status(201).json({
       _id: user._id,
       name: user.name,
       email: user.email,
       role: user.role,
+      tokenVersion: user.tokenVersion,
       token: generateToken(user),
     });
   } catch (error) {
@@ -46,6 +55,7 @@ const loginUser = async (req, res) => {
         name: user.name,
         email: user.email,
         role: user.role,
+        tokenVersion: user.tokenVersion,
         token: generateToken(user),
       });
     } else {
@@ -55,4 +65,33 @@ const loginUser = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-module.exports = { registerUser, loginUser };
+
+const logoutUser = async (req, res) => {
+  connectDatabase();
+  const token = req.headers["authorization"]?.split(" ")[1];
+  if (!token) {
+    return res.status(401).json({ message: "Token not found" });
+  }
+
+  try {
+    const decrypted = jwt.verify(token, process.env.JWT_SECRET);
+    const { _id, tokenVersion } = decrypted;
+
+    const user = await User.findById(_id);
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    if (user.tokenVersion !== tokenVersion) {
+      return res.status(401).json({ message: "Invalid token" });
+    }
+    user.tokenVersion += 1;
+    await user.save();
+
+    res.status(200).json({ message: "Logged out successfully" });
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Something went wrong", error: error.message });
+  }
+};
+module.exports = { registerUser, loginUser, logoutUser };

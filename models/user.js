@@ -25,6 +25,7 @@ const rbac_userSchema = new mongoose.Schema({
     default: "user",
     required: true,
   },
+  tokenVersion: { type: Number, default: 1 },
 });
 
 //  using bcrypt to hash the pasword

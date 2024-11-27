@@ -91,7 +91,7 @@ const logoutUser = async (req, res) => {
     }
     user.tokenVersion += 1;
     await user.save();
-    logger.info(`User logged out: ${email}`);
+    logger.info(`User logged out: ${user.email}`);
     res.status(200).json({ message: "Logged out successfully" });
   } catch (error) {
     logger.error(`Error during logout: for  ${error.message}`);

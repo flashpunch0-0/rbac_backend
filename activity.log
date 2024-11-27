@@ -1,0 +1,7 @@
+2024-11-28 03:36:00 [INFO]: User logged in: adminlogout@gmail.com
+2024-11-28 03:37:36 [INFO]: Admin access: User adminlogout with role admin accessed admin route.
+2024-11-28 03:37:52 [INFO]: Moderator/Admin access: User adminlogout with role admin accessed moderator route.
+2024-11-28 03:38:05 [INFO]: Permission granted: User adminlogout has permission to access this route.
+2024-11-28 03:38:22 [ERROR]: Error during logout: for  email is not defined
+2024-11-28 03:39:55 [INFO]: User logged in: adminlogout@gmail.com
+2024-11-28 03:40:09 [INFO]: User logged out: adminlogout@gmail.com

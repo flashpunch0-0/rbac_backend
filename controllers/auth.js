@@ -1,7 +1,7 @@
 const { connectDatabase } = require("../config/db");
 const User = require("../models/user");
 const jwt = require("jsonwebtoken");
-
+const logger = require("../ActivityLogging/Logger");
 //  generate jwt token
 const generateToken = (user) => {
   const payload = {
@@ -22,6 +22,7 @@ const registerUser = async (req, res) => {
     const userExists = await User.findOne({ email });
     if (userExists)
       return res.status(400).json({ message: "User already exists" });
+
     const user = await User.create({
       username,
       name,
@@ -59,9 +60,12 @@ const loginUser = async (req, res) => {
         token: generateToken(user),
       });
     } else {
+      logger.warn(`Failed login attempt for email: ${email}`);
       res.status(401).json({ message: "Invalid email or password" });
     }
+    logger.info(`User logged in: ${email}`);
   } catch (error) {
+    logger.error(`Error during login: ${error.message}`);
     res.status(500).json({ message: error.message });
   }
 };
@@ -70,6 +74,7 @@ const logoutUser = async (req, res) => {
   connectDatabase();
   const token = req.headers["authorization"]?.split(" ")[1];
   if (!token) {
+    logger.warn(`Logout attempt without token`);
     return res.status(401).json({ message: "Token not found" });
   }
 
@@ -86,9 +91,10 @@ const logoutUser = async (req, res) => {
     }
     user.tokenVersion += 1;
     await user.save();
-
+    logger.info(`User logged out: ${email}`);
     res.status(200).json({ message: "Logged out successfully" });
   } catch (error) {
+    logger.error(`Error during logout: for  ${error.message}`);
     res
       .status(500)
       .json({ message: "Something went wrong", error: error.message });

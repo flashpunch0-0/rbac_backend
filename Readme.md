@@ -37,7 +37,7 @@ Returns a message confirming user access with the user’s name.
 ### User Permission Route
 
 `POST /api/request/permission`  
-Verifies whether the user has the required permission to access a specific route. 
+Verifies whether the user has the required permission to access a specific route.
 ![image](https://github.com/user-attachments/assets/90be1d92-d5a5-4824-b21e-cd957606b02c)
 
 Returns a success message confirming user permission.
@@ -47,22 +47,28 @@ Returns a success message confirming user permission.
 Follow these steps to set up the project locally:
 
 ### Prerequisites
+
 Make sure you have the following installed:
+
 - Node.js (version 14 or higher)
 - MongoDB (for local development)
 
 ### Steps
+
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/role-based-authorization.git
    ```
 
 2. Navigate to the project directory:
+
    ```bash
    cd role-based-authorization
    ```
 
 3. Install dependencies:
+
    ```bash
    npm install
    ```
@@ -75,11 +81,11 @@ Make sure you have the following installed:
    PORT=3010
    ```
 5. Generate JWT secret key
-    Open cmd and type - node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
-      it will generate a secret key similar to this 
-        ebae5b8d2c54ad8547cfbfa44b7ab451dffdc2d0e91f88e6bfee1f440492d23g
-   
+   Open cmd and type - node -e "console.log(require('crypto').randomBytes(32).toString('hex'))"
+   it will generate a secret key similar to this
+   ebae5b8d2c54ad8547cfbfa44b7ab451dffdc2d0e91f88e6bfee1f440492d23g
 6. Run the server:
+
    ```bash
    npm start
    ```
@@ -99,9 +105,7 @@ This will run the test suite using Jest to ensure the routes and authorization l
 ### Test Coverage
 
 Tests are written using Jest and cover the following aspects:
+
 - Authentication and JWT token verification.
 - Role-based access control for each route.
 - Logging and error handling.
-
-
-Feel free to adjust the README based on your actual implementation and requirements. This gives potential contributors and users a clear understanding of the purpose and setup for your project.

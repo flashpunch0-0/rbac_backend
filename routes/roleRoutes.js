@@ -17,7 +17,7 @@ router.post("/admin", authorize(["admin"]), adminCheck);
 router.post("/moderate", authorize(["admin", "moderator"]), moderatorCheck);
 
 //
-router.post("/profile", authorize(["user"]), userCheck);
+router.post("/user", authorize(["user"]), userCheck);
 router.post(
   "/userPermission",
   authorize(["user", "admin"]),

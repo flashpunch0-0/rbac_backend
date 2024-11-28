@@ -10,6 +10,9 @@ app.use(cors());
 app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/request", roleRoutes);
-app.listen(3010, () => {
-  console.log("Server is running on port:3010");
+const PORT = process.env.PORT || 3010;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
+
+module.exports = app;

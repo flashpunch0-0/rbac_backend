@@ -2,6 +2,25 @@
 
 This project is a Node.js application that implements role-based access control (RBAC) using Express. The API allows users with different roles (Admin, Moderator, User) to access specific routes based on their roles. The routes and permissions("read","update","create") are protected using JSON Web Tokens (JWT), ensuring secure and controlled access to the system.
 
+# Table of Contents
+
+- [Features](https://github.com/flashpunch0-0/rbac_backend/edit/main/Readme.md#features)
+- [Authentication Routes](#authentication-routes)
+  - [Register Route](#register-route)
+  - [Login Route](#login-route)
+  - [Logout Route](#logout-route)
+- [Role Routes](#role-routes)
+  - [Admin Route](#admin-route)
+  - [Moderator Route](#moderator-route)
+  - [User Route](#user-route)
+- [Permission Routes](#user-permission-routes)
+- [Installation](#installation)
+- [Testing](#testing)
+  - [Test Coverage](#test-coverage)
+- [Logging](#logging)
+- [Added Security: Logout from All Devices](#added-security-:-logout-from-all-devices)
+
+
 ## Features
 
 - **Role-Based Authorization**: Protects routes based on user roles.
@@ -160,6 +179,10 @@ Tests are written using Jest and cover the following aspects:
 To enhance security, the application includes a logout-from-all-devices feature that invalidates all active tokens for a user, ensuring they are logged out from all devices. This is implemented using a tokenVersion field stored in the database.
 - **Storing the tokenVersion**: Each user record in the database includes a tokenVersion field.
 - **Token Generation**: When a user logs in, their JWT token includes the current tokenVersion as part of the payload.
+
+  
+  ![image](https://github.com/user-attachments/assets/b2da108a-dcb0-4337-964c-e54a577b27cb)
+
 - **Logout from All Devices**: When a user chooses to log out from all devices, the server increments the tokenVersion in the database.All previously issued tokens become invalid because they contain the old tokenVersion.
 
 

@@ -18,10 +18,18 @@ router.post("/moderate", authorize(["admin", "moderator"]), moderatorCheck);
 
 //
 router.post("/user", authorize(["user"]), userCheck);
+//
 router.post(
-  "/userPermission",
+  "/permissionRead",
   authorize(["user", "admin"]),
   permissionCheck("read"),
+  userPermissionCheck
+);
+//
+router.post(
+  "/permissionDelete",
+  authorize(["user", "admin", "moderator"]),
+  permissionCheck("delete"),
   userPermissionCheck
 );
 

@@ -144,3 +144,5 @@
 2024-11-28 18:15:03 [ERROR]: Error during logout: for  jwt expired
 2024-11-28 18:15:10 [INFO]: User logged in: adminlogout@gmail.com
 2024-11-28 18:15:23 [INFO]: User logged out: adminlogout@gmail.com
+2024-11-29 00:51:18 [INFO]: User logged in: adminlogout@gmail.com
+2024-11-29 00:52:27 [INFO]: Permission granted: User adminlogout has permission to access this route.

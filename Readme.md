@@ -4,7 +4,7 @@ This project is a Node.js application that implements role-based access control 
 
 # Table of Contents
 
-- [Features](https://github.com/flashpunch0-0/rbac_backend/edit/main/Readme.md#features)
+- [Features](#features)
 - [Authentication Routes](#authentication-routes)
   - [Register Route](#register-route)
   - [Login Route](#login-route)
@@ -18,7 +18,7 @@ This project is a Node.js application that implements role-based access control 
 - [Testing](#testing)
   - [Test Coverage](#test-coverage)
 - [Logging](#logging)
-- [Added Security: Logout from All Devices](#added-security-:-logout-from-all-devices)
+- [Added Security: Logout from All Devices](#added-security)
 
 
 ## Features
@@ -175,7 +175,8 @@ Tests are written using Jest and cover the following aspects:
   ![image](https://github.com/user-attachments/assets/8440dbb3-8200-48d0-909c-81513b214714)
 
 
-  ## ADDED SECURITY:  Logout from All Devices Functionality
+  ## ADDED SECURITY
+  Logout from All Devices Functionality
 To enhance security, the application includes a logout-from-all-devices feature that invalidates all active tokens for a user, ensuring they are logged out from all devices. This is implemented using a tokenVersion field stored in the database.
 - **Storing the tokenVersion**: Each user record in the database includes a tokenVersion field.
 - **Token Generation**: When a user logs in, their JWT token includes the current tokenVersion as part of the payload.

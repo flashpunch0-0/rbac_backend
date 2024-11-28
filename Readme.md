@@ -12,7 +12,24 @@ This project is a Node.js application that implements role-based access control 
 - **Logging**: Uses a Winston based custom logging system to track user access and activities.
 - **Database Integration**: Connects to a MongoDB database to store user data (like roles).
 
-## Routes
+## Authentication Routes
+### Register Route 
+ `POST /api/auth/register`
+ ![image](https://github.com/user-attachments/assets/dbce66a2-a4f6-4359-a8bd-53f4b394f493)
+ 
+
+### Login Route
+`POST /api/auth/login`
+![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1b8cc3c7-47dd-4dd0-a072-e4f08861e4db/7d3a4d55-238d-4c9b-973a-9780cd5b64d2/image.png)
+A JWT token will be received by user which can used to execute further requests.
+
+### LOGOUT Route
+`POST /api/auth/logout`
+![image](https://github.com/user-attachments/assets/d94b3ea7-59af-412d-94c0-0f2eebf64723)
+Mandatory thing while requiest logout from server; is to provide jwt token as key value pair   `Authorization :  Bearer jwt_token`
+
+## Role Routes
+
 
 The following routes are available:
 
@@ -100,7 +117,8 @@ To run the tests:
 npm run test
 ```
 
-This will run the test suite using Jest to ensure the routes and authorization logic are working as expected.
+This will run the test suite using Jest to ensure the routes and authorization logic are working as expected and would show output as:
+ ![image.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1b8cc3c7-47dd-4dd0-a072-e4f08861e4db/7ce9a4a1-22ac-42ea-accc-ee02a6cc6443/image.png)
 
 ### Test Coverage
 

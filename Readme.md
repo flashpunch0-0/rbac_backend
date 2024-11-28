@@ -168,15 +168,17 @@ Tests are written using Jest and cover the following aspects:
 - Role-based access control for each route.
 - Logging and error handling.
 
-  ## Logging
+### Logging
   Winston library has been used to maintain a record of activity by all accounts.
   `info` , `warn` and `error` are the types of logs.
   
   ![image](https://github.com/user-attachments/assets/8440dbb3-8200-48d0-909c-81513b214714)
 
 
-  ## ADDED SECURITY
-  Logout from All Devices Functionality
+### ADDED SECURITY
+
+###Logout from All Devices Functionality
+  
 To enhance security, the application includes a logout-from-all-devices feature that invalidates all active tokens for a user, ensuring they are logged out from all devices. This is implemented using a tokenVersion field stored in the database.
 - **Storing the tokenVersion**: Each user record in the database includes a tokenVersion field.
 - **Token Generation**: When a user logs in, their JWT token includes the current tokenVersion as part of the payload.

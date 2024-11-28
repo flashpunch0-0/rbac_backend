@@ -9,6 +9,7 @@ This project is a Node.js application that implements role-based access control 
   - **Moderator Route**: Accessible to users with "admin" or "moderator" roles.
   - **User Route**: Accessible to all authenticated users.
 - **JWT Authentication**: Secures endpoints using JWT tokens to ensure that only authenticated users can access protected routes.
+- **Bcrypt**: Hashes password to store safely in a database.
 - **Logging**: Uses a Winston based custom logging system to track user access and activities.
 - **Database Integration**: Connects to a MongoDB database to store user data (like roles).
 

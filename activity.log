@@ -5,3 +5,139 @@
 2024-11-28 03:38:22 [ERROR]: Error during logout: for  email is not defined
 2024-11-28 03:39:55 [INFO]: User logged in: adminlogout@gmail.com
 2024-11-28 03:40:09 [INFO]: User logged out: adminlogout@gmail.com
+2024-11-28 04:47:42 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 04:59:30 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 04:59:30 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 04:59:30 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 04:59:30 [WARN]: Logout attempt without token
+2024-11-28 04:59:30 [ERROR]: Error during logout: for  jwt malformed
+2024-11-28 05:01:01 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 05:01:01 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 05:01:01 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 05:01:01 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 05:01:01 [WARN]: Logout attempt without token
+2024-11-28 05:01:01 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 05:07:23 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 05:07:23 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 05:07:23 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 05:07:23 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 05:07:23 [WARN]: Logout attempt without token
+2024-11-28 05:07:23 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 05:07:23 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:42:15 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:42:15 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:42:15 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:42:15 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:42:15 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:42:15 [WARN]: Logout attempt without token
+2024-11-28 15:42:15 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:46:52 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:46:52 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:46:52 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:46:52 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:46:52 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:46:52 [WARN]: Logout attempt without token
+2024-11-28 15:46:52 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:47:18 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:47:18 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:47:19 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:47:19 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:47:19 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:47:19 [WARN]: Logout attempt without token
+2024-11-28 15:47:19 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:53:23 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:53:23 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:53:23 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:53:23 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:53:23 [WARN]: Logout attempt without token
+2024-11-28 15:53:23 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:53:49 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:53:49 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:53:49 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:53:49 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:53:49 [WARN]: Logout attempt without token
+2024-11-28 15:53:49 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:54:38 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:54:38 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:54:38 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:54:38 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:54:38 [WARN]: Logout attempt without token
+2024-11-28 15:54:38 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 15:58:00 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:58:00 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:58:00 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 15:58:00 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 15:58:00 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 15:58:00 [WARN]: Logout attempt without token
+2024-11-28 15:58:00 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:00:10 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:00:10 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:00:10 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:00:10 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:00:10 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:00:10 [WARN]: Logout attempt without token
+2024-11-28 16:00:10 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:04:12 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:04:12 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:04:12 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:04:12 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:04:12 [WARN]: Logout attempt without token
+2024-11-28 16:04:12 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:08:38 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:08:38 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:08:38 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:08:38 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:08:38 [WARN]: Logout attempt without token
+2024-11-28 16:08:38 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:11:48 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:11:48 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:11:48 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:11:48 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:11:48 [WARN]: Logout attempt without token
+2024-11-28 16:11:48 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:13:09 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:13:09 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:13:09 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:13:09 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:13:09 [WARN]: Logout attempt without token
+2024-11-28 16:13:09 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:18:20 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:20:28 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:22:04 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:28:06 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:28:38 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:28:57 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:29:05 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:29:05 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:29:05 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:29:05 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:29:05 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:29:05 [WARN]: Logout attempt without token
+2024-11-28 16:29:05 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:29:51 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:29:51 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:29:51 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:29:51 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:29:51 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:29:51 [WARN]: Logout attempt without token
+2024-11-28 16:29:51 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:35:41 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
+2024-11-28 16:35:41 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:35:42 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:35:42 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:35:42 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:35:42 [WARN]: Logout attempt without token
+2024-11-28 16:35:42 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:42:55 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:42:55 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:42:55 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:42:55 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:42:55 [WARN]: Logout attempt without token
+2024-11-28 16:42:55 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:43:26 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:43:26 [INFO]: User logged in: kratikTest@example.com
+2024-11-28 16:43:26 [WARN]: Failed login attempt for email: uniqueTest@example.com
+2024-11-28 16:43:26 [INFO]: User logged in: uniqueTest@example.com
+2024-11-28 16:43:26 [WARN]: Logout attempt without token
+2024-11-28 16:43:26 [INFO]: User logged out: kratikTest@example.com
+2024-11-28 16:43:26 [INFO]: Admin access: User kratikTest with role admin accessed admin route.
